@@ -1,0 +1,23 @@
+name: Deploy documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-doc:
+    runs-on: ubuntu-latest
+    name: Deploy twilio API documentations on Bump
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name:
+        uses: bump-sh/github-action@v1
+        with:
+          file: spec/json/
+          hub: twilio
+          token: ${{ secrets.BUMP_TOKEN }}
+          overlay: spec/bump-warning-overlay.yaml
+        env:
+          BUMP_HOST: ${{ secrets.BUMP_HOST }}

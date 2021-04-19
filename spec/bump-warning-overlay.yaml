@@ -1,0 +1,8 @@
+overlay: 1.0.0
+info:
+  title: Update description of Twilio docs to add a Bump.sh warning
+  version: 0.0.1
+actions:
+  - target: '$.info'
+    update:
+      description: "> warn\n> ⚠️  This is an unofficial public Twilio REST API documentation generated from an OpenAPI contract.\n> \n> \n> The source file was taken from **<https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_accounts_v1.json>** as **[a demonstration](https://bump.sh/blog/twilio-openapi-definitions)** of the Bump.sh product.\n\nThis is the public Twilio REST API."
