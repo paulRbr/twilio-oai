@@ -569,7 +569,7 @@
       "name": "Twilio Support",
       "url": "https://support.twilio.com"
     },
-    "description": "This is the public Twilio REST API.",
+    "description": "> warn\n> ⚠️  This is an unofficial public Twilio REST API documentation generated from an OpenAPI contract.\n> \n> \n> The source file was taken from **<https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_studio_v1.json>** as **[a demonstration](https://bump.sh/blog/twilio-openapi-definitions)** of the Bump.sh product.\n\nThis is the public Twilio REST API.",
     "license": {
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
