@@ -2,8 +2,8 @@
 
 set -eu
 
-# Install bump-cli (for now published as a Ruby gem)
-gem install bump-cli
+# Install bump-cli
+npm install -g bump-cli
 
 # For each file from the available `*.json` files
 for api in spec/json/twilio*.json; do
